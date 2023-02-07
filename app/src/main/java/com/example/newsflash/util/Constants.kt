@@ -1,4 +1,4 @@
-package com.example.newsflash
+package com.example.newsflash.util
 
 object Constants {
 

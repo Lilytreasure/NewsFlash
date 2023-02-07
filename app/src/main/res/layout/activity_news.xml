@@ -22,7 +22,7 @@
             app:titleTextColor="?attr/colorOnPrimary" />
 
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tab_layout"
+            android:id="@+id/tabsLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/customBg"
@@ -30,6 +30,7 @@
             app:tabIndicatorColor="@color/teal_200"
             app:tabIndicatorFullWidth="false"
             app:tabMaxWidth="0dp"
+            app:tabTextColor="@color/white"
             app:tabMode="scrollable"
             app:tabSelectedTextColor="@color/teal_200" />
 
@@ -37,7 +38,7 @@
 
 
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/view_pager"
+        android:id="@+id/MainViewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">

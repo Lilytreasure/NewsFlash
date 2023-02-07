@@ -7,9 +7,6 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.newsflash.data.ArticleList
-import com.example.newsflash.data.NewsList
-import com.example.newsflash.data.Source
-import com.example.newsflash.databinding.FragmentGeneralBinding
 import com.example.newsflash.databinding.ListItemsBinding
 
 class CustomAdapter:ListAdapter<ArticleList ,CustomAdapter.NewsViewHolder> (NewsListComparator()){
@@ -34,7 +31,6 @@ class CustomAdapter:ListAdapter<ArticleList ,CustomAdapter.NewsViewHolder> (News
 
 
     }
-
 
 
 
