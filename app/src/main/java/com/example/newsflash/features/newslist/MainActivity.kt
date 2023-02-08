@@ -37,12 +37,9 @@ class MainActivity : AppCompatActivity() {
         val fragmentAdapter=FragmentAdapter(supportFragmentManager,lifecycle)
 
 
-
         binding.apply {
             MainViewPager.apply {
                 adapter=fragmentAdapter
-
-
 
             }
 

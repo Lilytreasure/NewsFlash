@@ -6,10 +6,11 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.newsflash.data.ArticleList
+import com.example.newsflash.data.ArticlesList
+import com.example.newsflash.data.NewsList
 import com.example.newsflash.databinding.ListItemsBinding
 
-class CustomAdapter:ListAdapter<ArticleList ,CustomAdapter.NewsViewHolder> (NewsListComparator()){
+class CustomAdapter:ListAdapter<ArticlesList ,CustomAdapter.NewsViewHolder> (NewsListComparator()){
 
     //The general fragment has both a recycler view and a carouselview
 
@@ -40,7 +41,7 @@ class CustomAdapter:ListAdapter<ArticleList ,CustomAdapter.NewsViewHolder> (News
     class NewsViewHolder(private val binding:ListItemsBinding):
         RecyclerView.ViewHolder(binding.root){
 
-        fun bind(articleList:  ArticleList){
+        fun bind(articleList:  ArticlesList){
             binding.apply {
 
                 textDescription.text=articleList.description
@@ -62,11 +63,11 @@ class CustomAdapter:ListAdapter<ArticleList ,CustomAdapter.NewsViewHolder> (News
 
     //adding  the comparitor class
 
-    class NewsListComparator: DiffUtil.ItemCallback<ArticleList>(){
-        override fun areItemsTheSame(oldItem: ArticleList, newItem: ArticleList)=
+    class NewsListComparator: DiffUtil.ItemCallback<ArticlesList>(){
+        override fun areItemsTheSame(oldItem: ArticlesList, newItem: ArticlesList)=
             oldItem.title == newItem.title
 
-        override fun areContentsTheSame(oldItem: ArticleList, newItem: ArticleList)=
+        override fun areContentsTheSame(oldItem: ArticlesList, newItem: ArticlesList)=
             oldItem==newItem
 
     }

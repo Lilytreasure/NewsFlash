@@ -1,6 +1,6 @@
 package com.example.newsflash.data
 
-data class ArticleList(
+data class ArticlesList(
 
     val source: Source,
     val author: String? = null,
