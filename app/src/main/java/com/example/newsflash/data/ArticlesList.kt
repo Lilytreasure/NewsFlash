@@ -1,8 +1,11 @@
 package com.example.newsflash.data
 
-data class ArticlesList(
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
-    val source: Source,
+
+data class ArticlesList(
     val author: String? = null,
     val title: String,
     val description: String,
@@ -10,5 +13,6 @@ data class ArticlesList(
     val urlToImage: String,
     val publishedAt: String,
     val content: String
+
 
 )

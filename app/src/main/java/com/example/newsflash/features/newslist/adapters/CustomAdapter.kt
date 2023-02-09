@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.newsflash.data.ArticlesList
-import com.example.newsflash.data.NewsList
 import com.example.newsflash.databinding.ListItemsBinding
 
 class CustomAdapter:ListAdapter<ArticlesList ,CustomAdapter.NewsViewHolder> (NewsListComparator()){
@@ -44,12 +43,12 @@ class CustomAdapter:ListAdapter<ArticlesList ,CustomAdapter.NewsViewHolder> (New
         fun bind(articleList:  ArticlesList){
             binding.apply {
 
-                textDescription.text=articleList.description
+                textDescription.text= articleList.description
                // textAuthor.text=source.name
 
 
                 //maPing the image on the imageView using Glide
-                val url:String=articleList.urlToImage
+                val url=articleList.url
                 Glide.with(itemView)
                     .load(url)
                     .into(imageView)

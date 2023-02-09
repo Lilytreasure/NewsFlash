@@ -6,58 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".features.newslist.MainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/customBg"
-        app:elevation="0dp">
-
-
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:title="@string/app_name"
-            app:titleTextColor="?attr/colorOnPrimary" />
-
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabsLayout"
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/TobBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/customBg"
-            app:tabGravity="center"
-            app:tabIndicatorColor="@color/teal_200"
-            app:tabIndicatorFullWidth="false"
-            app:tabMaxWidth="0dp"
-            app:tabTextColor="@color/white"
-            app:tabMode="scrollable"
-            app:tabSelectedTextColor="@color/teal_200" />
-
-    </com.google.android.material.appbar.AppBarLayout>
+            app:elevation="0dp">
 
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/MainViewPager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:title="@string/app_name"
+                app:titleTextColor="?attr/colorOnPrimary" />
 
-    </androidx.viewpager2.widget.ViewPager2>
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/customBg"
+                app:tabGravity="center"
+                app:tabIndicatorColor="@color/teal_200"
+                app:tabIndicatorFullWidth="false"
+                app:tabMaxWidth="0dp"
+                app:tabTextColor="@color/white"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/teal_200" />
 
+        </com.google.android.material.appbar.AppBarLayout>
 
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/MainViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-
-
-
-
-
-
-
-
-
-
-
+        </androidx.viewpager2.widget.ViewPager2>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

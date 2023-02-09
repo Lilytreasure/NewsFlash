@@ -11,9 +11,9 @@ import retrofit2.http.Query
 
 interface NewsListApi {
 
-//    companion object{
-//        const val BASE_URL="https://newsapi.org/v2/"
-//    }
+    companion object{
+        const val BASE_URL="https://newsapi.org/v2/"
+    }
 
     //Get request
 
@@ -22,6 +22,7 @@ interface NewsListApi {
     //parameters as directed in the api
     //using Call in the querry
     //call list
+
 
    suspend fun getNews(@Query("country") country : String,
                @Query("category") category : String?,
